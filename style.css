@@ -1,0 +1,92 @@
+body {
+    background-color: #f3e5d8;
+}
+
+
+#container {
+    box-sizing:border-box;
+    width: 732px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    font-family: "Outfit", sans-serif;
+    color: hsl(30, 10%, 34%);
+    border-radius: 20px;
+    
+}
+
+#omelette {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#omelette img {
+    width: 100%;
+}
+
+#prep {
+    background-color: hsl(330, 100%, 98%);
+    color: hsl(332, 51%, 32%);
+}
+
+#prep,#Ingredients,#Instructions {
+    padding: 5px;
+}
+
+
+ul, ol{
+    margin-left: -25px;
+}
+li {
+    margin: 10px;
+}
+
+tr td:LAST-CHILD{
+    font-weight: 700;
+    color: hsl(14, 45%, 36%)
+}
+
+
+table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    height: 40px;
+}
+
+table tr:last-child {
+    border-bottom: none;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+#Ingredients,#Instructions {
+
+}
+
+h1 {
+    font-family: "Young Serif", sans-serif;
+}
+
+h2 {
+    font-family: "Young Serif", sans-serif;
+    color: hsl(14, 45%, 36%);
+}
+
+
+@media screen and (max-width: 732px) {
+    body{
+        height: min-content;
+    }
+    #container{
+        width:100%;
+        height: min-content;
+
+    }
+}
