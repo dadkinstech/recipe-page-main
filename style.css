@@ -1,16 +1,14 @@
 body {
     background-color: #f3e5d8;
+    height:min-content;
 }
 
 
 #container {
     box-sizing:border-box;
     width: 732px;
+    margin: auto;
     background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     padding: 40px;
     font-family: "Outfit", sans-serif;
     color: hsl(30, 10%, 34%);
@@ -66,9 +64,6 @@ table tr:last-child {
     border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
-#Ingredients,#Instructions {
-
-}
 
 h1 {
     font-family: "Young Serif", sans-serif;
@@ -82,11 +77,17 @@ h2 {
 
 @media screen and (max-width: 732px) {
     body{
-        height: min-content;
+        align-items: flex-start;
+        width: 100%;
+        max-height: min-content;
     }
     #container{
         width:100%;
+        min-width: 325px;
         height: min-content;
+        margin: 0;
+        padding: 0;
+        border-radius: 0px;
 
     }
 }
